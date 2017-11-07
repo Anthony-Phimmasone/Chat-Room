@@ -1,4 +1,13 @@
-package sample;
+package project3;
+
+/**
+ *
+ * class Main
+ * @author andyluong
+ * @author anthonyPhimmasone
+ * @author brianJustice
+ *
+ */
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,7 +20,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Bike Parts Distributorship Login");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
     }

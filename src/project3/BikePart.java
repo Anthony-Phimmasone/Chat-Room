@@ -1,6 +1,11 @@
-package sample;
+package project3;
 
-/** Class BikePart
+/**
+ *
+ * class Person
+ * @author andyluong
+ * @author anthonyPhimmasone
+ * @author brianJustice
  *
  * This is a BikePart class that stores information about bicycle part
  * partName - The name of the part
