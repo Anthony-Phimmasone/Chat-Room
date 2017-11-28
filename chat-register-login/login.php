@@ -3,13 +3,13 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$con = mysql_connect('localhost', 'root', '');
-mysql_select_db('chatbox', $con);
+$con = mysqli_connect('localhost', 'root', '');
+mysqli_select_db('chatbox', $con);
 
-$result = mysql_query("SELECT * FROM users WHERE username='$username' AND password='$password'");
+$result = mysqli_query("SELECT * FROM users WHERE username='$username' AND password='$password'");
 
-if(mysql_num_rows($result)){
-	$res = mysql_fetch_array($result);
+if(mysqli_num_rows($result)){
+	$res = mysqli_fetch_array($result);
 	
 	$_SESSION['username'] = $res['username'];
 	echo "You are now Logged in. Click <a href='index.php'>here</a> to go back to main chat window.";

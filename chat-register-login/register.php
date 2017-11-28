@@ -2,8 +2,8 @@
 
 if(isset($_POST['submit'])) {
 
-	$con = mysql_connect('localhost', 'root', '');
-	mysql_select_db('chatbox', $con);
+	$con = mysqli_connect('cs.umw.edu', 'sberming', 'Lemonade2', 'F17-CPSC348-01_sberming');
+	mysqli_select_db('chatbox', $con);
 	
 	$uname = $_POST['username'];
 	$pword = $_POST['password'];
@@ -13,12 +13,12 @@ if(isset($_POST['submit'])) {
 		echo "Passwords do not match. <br>";
 	}
 	else {
-		$checkexist = mysql_query("SELECT username FROM users WHERE username = '$uname'");
-		if(mysql_num_rows($checkexist)){
+		$checkexist = mysqli_query("SELECT username FROM users WHERE username = '$uname'");
+		if(mysqli_num_rows($checkexist)){
 			echo "Username already exists, Please select other username.<br>";
 		}
 		else {
-			mysql_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
+			mysqli_query("INSERT INTO users (`username`,`password`) VALUES('$uname','$pword')" );
 			
 			echo "You are now registered. Click <a href='index.php'>here</a> to start chatting";
 		}
