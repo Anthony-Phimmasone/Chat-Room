@@ -1,24 +1,34 @@
-.username{
-			color:blue;
-			font-weight:bold;
-			font-size:15px;
-			font-family:Verdana, Geneva, sans-serif;
-		}
-			
-.message{
-			color:black;
-			font-size:15px;
-			font-family:"Times New Roman", Times, serif;
-		}
-			
+body {
+	background-color: #87CEFA;
+}
+
+.header {
+    background-color: #09092a;
+    padding: 20px;
+    text-align: center;
+}
+
+.uName{
+                        color: #00F;
+                        font-weight:bold;
+                        font-size:15px;
+                        font-family:Verdana, Geneva, sans-serif;
+                }
+
+.msg{
+                        color:#390;
+                        font-size:15px;
+                        font-family: Georgia, "Times New Roman", Times, serif;
+                }
+
 .button{
-			text-align:center;
-			background-color:#00F;
-			border-width:2px;
-			border-style:solid;
-			border-color:#000;
-			color:#FFF;
-			padding-left:10px;
-			padding-right:10px;
-			text-declaration:none;
-		}
+                        text-align:center;
+                        background-color:#00F;
+                        border-width:2px;
+                        border-style:solid;
+                        border-color:#000;
+                        color:#FFF;
+                        padding-left:10px;
+                        padding-right:10px;
+                        text-declaration:none;
+                }
