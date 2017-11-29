@@ -3,7 +3,7 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$con = mysqli_connect('cs.umw.edu', 'sberming', 'Lemonade3','F17-CPSC348-01_sberming');
+$con = mysqli_connect('cs.umw.edu', 'sberming', '','F17-CPSC348-01_sberming');
 mysqli_select_db('chatbox', $con);
 
 $result = mysqli_query("SELECT * FROM users WHERE username='$username' AND password='$password'");
