@@ -3,7 +3,7 @@ session_start();
 $uname = $_SESSION['username'];
 $msg = $_REQUEST['msg'];
 
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('cs.umw.edu','sberming','Lemonade3','F17-CPSC348-01_sberming');
 mysqli_select_db('chatbox', $con);
 
 mysqli_query("INSERT INTO logs (`username`, `msg`) VALUES ('$uname', '$msg')");

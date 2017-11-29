@@ -2,7 +2,7 @@
 
 if(isset($_POST['submit'])) {
 
-	$con = mysqli_connect('cs.umw.edu', 'sberming', 'Lemonade2', 'F17-CPSC348-01_sberming');
+	$con = mysqli_connect('cs.umw.edu', 'sberming', '', 'F17-CPSC348-01_sberming');
 	mysqli_select_db('chatbox', $con);
 	
 	$uname = $_POST['username'];
